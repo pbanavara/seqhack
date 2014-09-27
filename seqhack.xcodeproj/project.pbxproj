@@ -12,6 +12,10 @@
 		27D4535519CD500F00006871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D4535319CD500F00006871 /* Main.storyboard */; };
 		27D4535719CD500F00006871 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4535619CD500F00006871 /* Images.xcassets */; };
 		27D4536319CD500F00006871 /* seqhackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D4536219CD500F00006871 /* seqhackTests.swift */; };
+		27D4536D19CD508200006871 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D4536C19CD508200006871 /* image.png */; };
+		27D4536E19CD508200006871 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D4536C19CD508200006871 /* image.png */; };
+		27D7858019CEABE60027CE3A /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D7857D19CEAB930027CE3A /* GPUImage.framework */; };
+		27D7858219CEB0F20027CE3A /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27D7857D19CEAB930027CE3A /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +26,41 @@
 			remoteGlobalIDString = 27D4534919CD500F00006871;
 			remoteInfo = seqhack;
 		};
+		27D7857A19CEAB930027CE3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D7857419CEAB930027CE3A /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		27D7857C19CEAB930027CE3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D7857419CEAB930027CE3A /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		27D7857E19CEABCF0027CE3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D7857419CEAB930027CE3A /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE209E41943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27D7858119CEB0DD0027CE3A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27D7858219CEB0F20027CE3A /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27D4534A19CD500F00006871 /* seqhack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seqhack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +72,8 @@
 		27D4535C19CD500F00006871 /* seqhackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = seqhackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D4536119CD500F00006871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27D4536219CD500F00006871 /* seqhackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seqhackTests.swift; sourceTree = "<group>"; };
+		27D4536C19CD508200006871 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = ../../Downloads/Resources/image.png; sourceTree = "<group>"; };
+		27D7857419CEAB930027CE3A /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../../GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D7858019CEABE60027CE3A /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +116,7 @@
 		27D4534C19CD500F00006871 /* seqhack */ = {
 			isa = PBXGroup;
 			children = (
+				27D7857419CEAB930027CE3A /* GPUImage.xcodeproj */,
 				27D4534F19CD500F00006871 /* AppDelegate.swift */,
 				27D4535119CD500F00006871 /* ViewController.swift */,
 				27D4535319CD500F00006871 /* Main.storyboard */,
@@ -87,6 +129,7 @@
 		27D4534D19CD500F00006871 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27D4536C19CD508200006871 /* image.png */,
 				27D4534E19CD500F00006871 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -109,6 +152,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27D7857519CEAB930027CE3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D7857B19CEAB930027CE3A /* libGPUImage.a */,
+				27D7857D19CEAB930027CE3A /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +171,12 @@
 				27D4534619CD500F00006871 /* Sources */,
 				27D4534719CD500F00006871 /* Frameworks */,
 				27D4534819CD500F00006871 /* Resources */,
+				27D7858119CEB0DD0027CE3A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27D7857F19CEABCF0027CE3A /* PBXTargetDependency */,
 			);
 			name = seqhack;
 			productName = seqhack;
@@ -176,6 +230,12 @@
 			mainGroup = 27D4534119CD500F00006871;
 			productRefGroup = 27D4534B19CD500F00006871 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27D7857519CEAB930027CE3A /* Products */;
+					ProjectRef = 27D7857419CEAB930027CE3A /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				27D4534919CD500F00006871 /* seqhack */,
@@ -184,6 +244,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		27D7857B19CEAB930027CE3A /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 27D7857A19CEAB930027CE3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27D7857D19CEAB930027CE3A /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 27D7857C19CEAB930027CE3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		27D4534819CD500F00006871 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -191,6 +268,7 @@
 			files = (
 				27D4535519CD500F00006871 /* Main.storyboard in Resources */,
 				27D4535719CD500F00006871 /* Images.xcassets in Resources */,
+				27D4536D19CD508200006871 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D4536E19CD508200006871 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +307,11 @@
 			isa = PBXTargetDependency;
 			target = 27D4534919CD500F00006871 /* seqhack */;
 			targetProxy = 27D4535D19CD500F00006871 /* PBXContainerItemProxy */;
+		};
+		27D7857F19CEABCF0027CE3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImageFramework;
+			targetProxy = 27D7857E19CEABCF0027CE3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +481,7 @@
 				27D4536819CD500F00006871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27D4536919CD500F00006871 /* Build configuration list for PBXNativeTarget "seqhackTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +490,7 @@
 				27D4536B19CD500F00006871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
